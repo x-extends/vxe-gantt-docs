@@ -1,0 +1,58 @@
+@use './theme/light.scss';
+@use './theme/dark.scss';
+@use './base.scss';
+
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+html,
+body {
+  [qingmingjie] {
+    filter: grayscale(1);
+  }
+}
+
+body {
+  color: var(--vxe-ui-docs-font-color);
+  background: #f3f5f8;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.orange {
+  color: orange;
+}
+.bold {
+  font-weight: 700;
+}
+
+.docs-title {
+  margin: 8px 0 32px 0;
+}
+
+.keyword-lighten {
+  background-color: #FFFF00;
+}
+
+.about-to-stop {
+  color: orange;
+}
+.due-to-stop {
+  color: red;
+  text-decoration: line-through;
+}
+
+.demo-page-wrapper {
+  height: calc(100vh - 400px);
+  max-width: 1800px;
+  overflow: hidden;
+}
