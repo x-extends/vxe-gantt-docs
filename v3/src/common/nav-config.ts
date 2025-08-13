@@ -69,7 +69,7 @@ export const navConfigList: NavVO[] = [
       { i18nKey: 'app.aside.menu.functions', linkUrl: 'https://vxeui.com/xe-utils/' }
     ]
   },
-  ...ganttNavConfig.children,
+  ganttNavConfig,
   {
     title: 'API',
     isExpand: true,

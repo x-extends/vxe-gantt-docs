@@ -22,8 +22,8 @@ import 'vxe-pc-ui/es/style.css'
 import VxeUITable from 'vxe-table'
 import 'vxe-table/es/style.css'
 
-import VxeUIDesign from 'vxe-design'
-import 'vxe-design/lib/style.css'
+import VxeUIGantt from 'vxe-gantt'
+import 'vxe-gantt/lib/style.css'
 
 // import zhCN from 'vxe-pc-ui/lib/language/zh-CN' // 简体中文
 import zhCHT from 'vxe-pc-ui/lib/language/zh-CHT' // 繁体中文
@@ -143,7 +143,7 @@ app.component('ApiLink', ApiLink)
 
 app.use(VxeUIAll)
 app.use(VxeUITable)
-app.use(VxeUIDesign)
+app.use(VxeUIGantt)
 
 app.use(store)
 app.use(router)
