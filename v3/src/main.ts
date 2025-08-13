@@ -22,6 +22,9 @@ import 'vxe-pc-ui/lib/style.css'
 import VxeUITable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 
+import VxeUIGantt from 'vxe-gantt'
+import 'vxe-gantt/lib/style.css'
+
 // import zhCN from 'vxe-pc-ui/lib/language/zh-CN' // 简体中文
 import zhCHT from 'vxe-pc-ui/lib/language/zh-CHT' // 繁体中文
 // import zhHK from 'vxe-pc-ui/lib/language/zh-HK' // 中文(香港)
@@ -132,6 +135,7 @@ Vue.component('ApiLink', ApiLink)
 
 Vue.use(VxeUIAll)
 Vue.use(VxeUITable)
+Vue.use(VxeUIGantt)
 
 Vue.config.productionTip = false
 
