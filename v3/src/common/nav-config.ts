@@ -2,8 +2,8 @@ import XEUtils from 'xe-utils'
 import { NavVO, otherUrl } from './nav'
 import { ganttNavConfig } from './gantt'
 
-XEUtils.eachTree(ganttNavConfig.children.slice(0, 1), (item, index, items, path, parent, nodes) => {
-  if (nodes.length <= 2) {
+XEUtils.eachTree([ganttNavConfig], (item, index, items, path, parent, nodes) => {
+  if (nodes.length <= 1) {
     item.isExpand = true
   }
 })
