@@ -14,25 +14,11 @@
             // VxeUI 是 Vxe 库通用全局实例
 
             VxeUI.setIcon({
-              // form-design
-              FORM_DESIGN_STYLE_SETTING: vxe-icon-layout',
-              FORM_DESIGN_PROPS_PC: vxe-icon-pc',
-              FORM_DESIGN_PROPS_MOBILE: vxe-icon-mobile',
-              FORM_DESIGN_PROPS_ADD: vxe-icon-add',
-              FORM_DESIGN_PROPS_EDIT: vxe-icon-edit',
-              FORM_DESIGN_WIDGET_ADD: vxe-icon-square-plus-fill',
-              FORM_DESIGN_WIDGET_COPY: vxe-icon-copy',
-              FORM_DESIGN_WIDGET_DELETE: vxe-icon-delete',
-              FORM_DESIGN_WIDGET_SWAP_LR: vxe-icon-swap',
-              FORM_DESIGN_WIDGET_OPTION_DELETE: vxe-icon-delete',
-              FORM_DESIGN_WIDGET_OPTION_EXPAND_OPEN: vxe-icon-square-plus',
-              FORM_DESIGN_WIDGET_OPTION_EXPAND_CLOSE: vxe-icon-square-minus',
-
-              // list-design
-              LIST_DESIGN_FIELD_SETTING: vxe-icon-custom-column',
-              LIST_DESIGN_LIST_SETTING: vxe-icon-menu',
-              LIST_DESIGN_LIST_SETTING_SEARCH_DELETE: vxe-icon-delete',
-              LIST_DESIGN_LIST_SETTING_ACTIVE_DELETE: vxe-icon-delete'
+              // gantt
+              GANTT_VIEW_LEFT_OPEN: 'vxe-icon-arrow-left',
+              GANTT_VIEW_LEFT_CLOSE: 'vxe-icon-arrow-right',
+              GANTT_VIEW_RIGHT_OPEN: 'vxe-icon-arrow-right',
+              GANTT_VIEW_RIGHT_CLOSE: 'vxe-icon-arrow-left'
             })
           </pre-code>
         </pre>

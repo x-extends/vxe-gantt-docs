@@ -14,17 +14,50 @@
             // VxeUI 是 Vxe 库通用全局实例
 
             VxeUI.setConfig({
-              formDesign: {
-                height: 400,
-                showHeader: true,
-                showPc: true
+              gantt: {
+              // size: null,
+              // zoomConfig: {
+              //   escRestore: true
+              // },
+              formConfig: {
+                enabled: true
               },
-              formView: {},
-              listDesign: {
-                height: 400,
-                showPc: true
+              pagerConfig: {
+                enabled: true
+                // perfect: false
               },
-              listView: {}
+              toolbarConfig: {
+                enabled: true
+                // perfect: false
+              },
+              proxyConfig: {
+                enabled: true,
+                autoLoad: true,
+                showLoading: true,
+                showResponseMsg: true,
+                showActionMsg: true,
+                response: {
+                  list: null,
+                  result: 'result',
+                  total: 'page.total',
+                  message: 'message'
+                }
+                // beforeItem: null,
+                // beforeColumn: null,
+                // beforeQuery: null,
+                // afterQuery: null,
+                // beforeDelete: null,
+                // afterDelete: null,
+                // beforeSave: null,
+                // afterSave: null
+              },
+              taskSplitConfig: {
+                enabled: true,
+                resize: true,
+                showCollapseTableButton: true,
+                showCollapseTaskButton: true
+              }
+            }
             })
           </pre-code>
         </pre>
