@@ -139,6 +139,18 @@ export const ganttNavConfig: NavVO & { children: NavVO[] } = {
       ]
     },
     {
+      title: '日期轴',
+      children: [
+        { title: '自定义日期轴', routerLink: { name: 'ComponentGanttScalesDefault' } },
+        { title: '年-月-日', routerLink: { name: 'ComponentGanttScalesYearMonthDate' } },
+        { title: '季-月-日', routerLink: { name: 'ComponentGanttScalesQuarterMonthDate' } },
+        { title: '月-日', routerLink: { name: 'ComponentGanttScalesMonthDate' } },
+        { title: '天-小时', routerLink: { name: 'ComponentGanttScalesDateHour' } },
+        { title: '小时-分钟', routerLink: { name: 'ComponentGanttScalesHourMinute' } },
+        { title: '分钟-秒', routerLink: { name: 'ComponentGanttScalesMinuteSecond' } }
+      ]
+    },
+    {
       title: '依赖关系',
       children: [
         { title: '依赖线', isEnterprise: true, isDisabled: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: '111' }, query: { previewPath: '111' } } },
