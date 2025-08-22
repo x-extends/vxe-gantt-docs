@@ -60,7 +60,9 @@ export const ganttRouteConfig: RouteRecordRaw = {
       component: RouteLayout,
       children: [
         { path: 'highlight', name: 'ComponentGanttRadioHighlight', component: () => import('@/views/gantt/radio/highlight/CodeExample.vue') },
-        { path: 'checkMethod', name: 'ComponentGanttRadioCheckMethod', component: () => import('@/views/gantt/radio/checkMethod/CodeExample.vue') }
+        { path: 'checkMethod', name: 'ComponentGanttRadioCheckMethod', component: () => import('@/views/gantt/radio/checkMethod/CodeExample.vue') },
+        { path: 'trigger', name: 'ComponentGanttRadioTrigger', component: () => import('@/views/gantt/radio/trigger/CodeExample.vue') },
+        { path: 'visibleMethod', name: 'ComponentGanttRadioVisibleMethod', component: () => import('@/views/gantt/radio/visibleMethod/CodeExample.vue') }
       ]
     },
     {
@@ -69,7 +71,13 @@ export const ganttRouteConfig: RouteRecordRaw = {
       children: [
         { path: 'highlight', name: 'ComponentGanttCheckboxHighlight', component: () => import('@/views/gantt/checkbox/highlight/CodeExample.vue') },
         { path: 'field', name: 'ComponentGanttCheckboxField', component: () => import('@/views/gantt/checkbox/field/CodeExample.vue') },
-        { path: 'checkMethod', name: 'ComponentGanttCheckboxCheckMethod', component: () => import('@/views/gantt/checkbox/checkMethod/CodeExample.vue') }
+        { path: 'checkMethod', name: 'ComponentGanttCheckboxCheckMethod', component: () => import('@/views/gantt/checkbox/checkMethod/CodeExample.vue') },
+        { path: 'batch', name: 'ComponentGanttCheckboxBatch', component: () => import('@/views/gantt/checkbox/batch/CodeExample.vue') },
+        { path: 'range', name: 'ComponentGanttCheckboxRange', component: () => import('@/views/gantt/checkbox/range/CodeExample.vue') },
+        { path: 'reserve', name: 'ComponentGanttCheckboxReserve', component: () => import('@/views/gantt/checkbox/reserve/CodeExample.vue') },
+        { path: 'showReserveStatus', name: 'ComponentGanttCheckboxShowReserveStatus', component: () => import('@/views/gantt/checkbox/showReserveStatus/CodeExample.vue') },
+        { path: 'trigger', name: 'ComponentGanttCheckboxTrigger', component: () => import('@/views/gantt/checkbox/trigger/CodeExample.vue') },
+        { path: 'visibleMethod', name: 'ComponentGanttCheckboxVisibleMethod', component: () => import('@/views/gantt/checkbox/visibleMethod/CodeExample.vue') }
       ]
     },
     {
@@ -113,42 +121,22 @@ export const ganttRouteConfig: RouteRecordRaw = {
       path: 'rowDrag',
       component: RouteLayout,
       children: [
-        {
-          path: 'sort',
-          name: 'ComponentGanttRowDragSort',
-          component: () => import('@/views/gantt/rowDrag/sort/CodeExample.vue')
-        },
+        { path: 'sort', name: 'ComponentGanttRowDragSort', component: () => import('@/views/gantt/rowDrag/sort/CodeExample.vue') },
+        { path: 'fixed', name: 'ComponentGanttRowDragFixed', component: () => import('@/views/gantt/rowDrag/fixed/CodeExample.vue') },
+        { path: 'icon', name: 'ComponentGanttRowDragIcon', component: () => import('@/views/gantt/rowDrag/icon/CodeExample.vue') },
         {
           path: 'tree',
           component: RouteLayout,
           children: [
-            {
-              path: 'base',
-              name: 'ComponentGanttRowDragTreeBase',
-              component: () => import('@/views/gantt/rowDrag/tree/base/CodeExample.vue')
-            },
-            {
-              path: 'peerDrag',
-              name: 'ComponentGanttRowDragTreePeerDrag',
-              component: () => import('@/views/gantt/rowDrag/tree/peerDrag/CodeExample.vue')
-            },
-            {
-              path: 'cossDrag',
-              name: 'ComponentGanttRowDragTreeCossDrag',
-              component: () => import('@/views/gantt/rowDrag/tree/cossDrag/CodeExample.vue')
-            },
-            {
-              path: 'selfToChildDrag',
-              name: 'ComponentGanttRowDragTreeSelfToChildDrag',
-              component: () => import('@/views/gantt/rowDrag/tree/selfToChildDrag/CodeExample.vue')
-            },
-            {
-              path: 'toChildDrag',
-              name: 'ComponentGanttRowDragTreeToChildDrag',
-              component: () => import('@/views/gantt/rowDrag/tree/toChildDrag/CodeExample.vue')
-            }
+            { path: 'base', name: 'ComponentGanttRowDragTreeBase', component: () => import('@/views/gantt/rowDrag/tree/base/CodeExample.vue') },
+            { path: 'peerDrag', name: 'ComponentGanttRowDragTreePeerDrag', component: () => import('@/views/gantt/rowDrag/tree/peerDrag/CodeExample.vue') },
+            { path: 'cossDrag', name: 'ComponentGanttRowDragTreeCossDrag', component: () => import('@/views/gantt/rowDrag/tree/cossDrag/CodeExample.vue') },
+            { path: 'selfToChildDrag', name: 'ComponentGanttRowDragTreeSelfToChildDrag', component: () => import('@/views/gantt/rowDrag/tree/selfToChildDrag/CodeExample.vue') },
+            { path: 'toChildDrag', name: 'ComponentGanttRowDragTreeToChildDrag', component: () => import('@/views/gantt/rowDrag/tree/toChildDrag/CodeExample.vue') }
           ]
-        }
+        },
+        { path: 'dragMethod', name: 'ComponentGanttRowDragDragMethod', component: () => import('@/views/gantt/rowDrag/dragMethod/CodeExample.vue') },
+        { path: 'manual', name: 'ComponentGanttRowDragManual', component: () => import('@/views/gantt/rowDrag/manual/CodeExample.vue') }
       ]
     },
     {
