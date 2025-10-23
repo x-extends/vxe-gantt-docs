@@ -28,7 +28,7 @@
             language="javascript"
             :content="`
               // ...
-              import VxeUIAll from 'vxe-pc-ui'
+              import VxeUIBase from 'vxe-pc-ui'
               import 'vxe-pc-ui/es/style.css'
 
               import VxeUITable from 'vxe-table'
@@ -38,7 +38,7 @@
               import 'vxe-gantt/es/style.css'
               // ...
 
-              Vue.use(VxeUIAll)
+              Vue.use(VxeUIBase)
               Vue.use(VxeUITable)
               Vue.use(VxeUIGantt)
               //...
