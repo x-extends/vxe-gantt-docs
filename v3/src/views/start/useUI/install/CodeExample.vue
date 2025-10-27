@@ -69,7 +69,7 @@
               ...
               "vxe-pc-ui": "~${uiLibVersion}",
               "vxe-table": "~${tableLibVersion}",
-              "vxe-gantt": "~${ganttLibVersion}"
+              "vxe-gantt": "^${ganttLibVersion}"
               ...
             }
             `'>
