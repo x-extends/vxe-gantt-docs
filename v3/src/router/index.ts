@@ -6,6 +6,10 @@ import { ganttRouteConfig } from './gantt'
 import RouteLayout from '@/components/RouteLayout.vue'
 import PageLayout from '@/components/PageLayout.vue'
 
+import DemoProductList from '@/views/demo/productList/CodeExample.vue'
+import DemoProductTree from '@/views/demo/productTree/CodeExample.vue'
+import DemoViewList from '@/views/demo/viewList/CodeExample.vue'
+
 import StartUIInstall from '@/views/start/useUI/install/CodeExample.vue'
 import StartTableInstall from '@/views/start/useTable/install/CodeExample.vue'
 import StartDesignInstall from '@/views/start/useDesign/install/CodeExample.vue'
@@ -20,14 +24,23 @@ const routes: Array<RouteConfig> = [
   {
     path: '*',
     redirect: {
-      name: 'StartUIInstall'
+      name: 'StartGanttInstall'
     }
   },
   {
     path: '/',
     redirect: {
-      name: 'StartUIInstall'
+      name: 'DemoProductList'
     }
+  },
+  {
+    path: '/demo',
+    component: PageLayout,
+    children: [
+      { path: 'productList', name: 'DemoProductList', component: DemoProductList },
+      { path: 'productTree', name: 'DemoProductTree', component: DemoProductTree },
+      { path: 'viewList', name: 'DemoViewList', component: DemoViewList }
+    ]
   },
   {
     path: '/start',
