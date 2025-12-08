@@ -15,7 +15,8 @@ export const navConfigList: NavVO[] = [
     children: [
       { i18nKey: 'app.aside.menu.demoProductList', routerLink: { name: 'DemoProductList' } },
       { i18nKey: 'app.aside.menu.demoProductTree', routerLink: { name: 'DemoProductTree' } },
-      { i18nKey: 'app.aside.menu.demoViewList', routerLink: { name: 'DemoViewList' } }
+      { i18nKey: 'app.aside.menu.demoViewList', routerLink: { name: 'DemoViewList' } },
+      { i18nKey: 'plugins.extendGanttChart.nav.taskDragBase', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_gantt_task_drag_drag' }, query: { previewPath: '%2FextendGanttChart%2Fgantt%2FtaskDrag%2Fdrag' } } }
     ]
   },
   {
