@@ -2,7 +2,7 @@
   <div>
     <CodeLight>
       <template #tip>
-        <vxe-tip status="primary" title="国际化语言">
+        <vxe-tip status="primary" title="对组件内置内容进行翻译">
           通过调用 VxeUI.setLanguage('zh-CN') 方法可以切换组件语言
         </vxe-tip>
       </template>
@@ -13,8 +13,8 @@
             import { VxeUI } from 'vxe-pc-ui'
             // VxeUI 是 Vxe 库通用全局实例
 
-            import zhCN from 'vxe-pc-ui/lib/language/zh-CN' // 简体中文
-            // import zhCHT from 'vxe-pc-ui/lib/language/zh-CHT' // 繁体中文
+            // import zhCN from 'vxe-pc-ui/lib/language/zh-CN' // 简体中文
+            import zhCHT from 'vxe-pc-ui/lib/language/zh-CHT' // 繁体中文
             // import zhHK from 'vxe-pc-ui/lib/language/zh-HK' // 中文(香港)
             // import zhTW from 'vxe-pc-ui/lib/language/zh-TW' // 中文(台湾)
             // import zhMO from 'vxe-pc-ui/lib/language/zh-MO' // 中文(澳门)
@@ -75,8 +75,8 @@
 
     <CodeLight>
       <template #tip>
-        <vxe-tip status="primary" title="使用自定义国际化">
-          当使用其他国际化插件时，例如 vxe-i18n，可以使用自定义国际化
+        <vxe-tip status="primary" title="示例">
+          当使用其他国际化插件时，例如 vue-i18n，可以使用自定义国际化
         </vxe-tip>
       </template>
 
