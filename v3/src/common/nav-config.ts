@@ -18,8 +18,8 @@ export const navConfigList: NavVO[] = [
       { i18nKey: 'app.aside.menu.demoViewList', routerLink: { name: 'DemoViewList' } },
       { i18nKey: 'plugins.base.nav.demoTaskMove', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_demo_task_move' }, query: { previewPath: '%2FextendGanttChart%2Fdemo%2FtaskMove' } } },
       { i18nKey: 'plugins.base.nav.demoTaskLink', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_demo_task_link' }, query: { previewPath: '%2FextendGanttChart%2Fdemo%2FtaskLink' } } },
-      { i18nKey: 'plugins.base.nav.demoMilestoneLink', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_demo_milestone_link' }, query: { previewPath: '%2FextendGanttChart%2Fdemo%2FMilestoneLink' } } },
-      { i18nKey: 'plugins.base.nav.demoCreateLink', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_demo_create_link' }, query: { previewPath: '%2FextendGanttChart%2Fdemo%2FCreateLink' } } }
+      { i18nKey: 'plugins.base.nav.demoMilestoneLink', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_demo_milestone_link' }, query: { previewPath: '%2FextendGanttChart%2Fdemo%2FmilestoneLink' } } },
+      { i18nKey: 'plugins.base.nav.demoCreateLink', isEnterprise: true, routerLink: { name: 'EnterprisePreview', params: { previewCode: 'extend_gantt_chart_demo_create_link' }, query: { previewPath: '%2FextendGanttChart%2Fdemo%2FcreateLink' } } }
     ]
   },
   {
