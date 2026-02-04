@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "update": "npm install --legacy-peer-deps",
-    "update:v3": "cd v3 && npm install --legacy-peer-deps",
-    "update:v4": "cd v4 && npm install --legacy-peer-deps",
+    "update": "pnpm i",
+    "update:v3": "cd v3 && npm run update",
+    "update:v4": "cd v4 && npm run update",
     "update:all": "npm run update:v3 && npm run update:v4",
     "build:v3": "cd v3 && npm run pack",
     "build:v4": "cd v4 && npm run pack",
