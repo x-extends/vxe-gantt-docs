@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "update": "pnpm install",
+    "update": "pnpm install --no-frozen-lockfile",
     "update:v3": "cd v3 && npm run update",
     "update:v4": "cd v4 && npm run update",
     "update:all": "npm run update:v3 && npm run update:v4",
