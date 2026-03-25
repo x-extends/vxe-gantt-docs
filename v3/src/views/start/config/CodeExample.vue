@@ -51,11 +51,59 @@
                   // beforeSave: null,
                   // afterSave: null
                 },
+                taskBarTooltipConfig: {
+                  enterable: true
+                },
+                taskLinkConfig: {
+                  enabled: true,
+                  isHover: true,
+                  showArrow: true
+                },
+                taskViewScaleConfig: {
+                  year: {
+                    valueFormat: 'yyyy-MM-dd'
+                  },
+                  quarter: {
+                    valueFormat: 'yyyy-MM-dd'
+                  },
+                  month: {
+                    valueFormat: 'yyyy-MM-dd'
+                  },
+                  week: {
+                    startDay: 1,
+                    valueFormat: 'yyyy-MM-dd'
+                  },
+                  day: {
+                    valueFormat: 'yyyy-MM-dd'
+                  },
+                  date: {
+                    valueFormat: 'yyyy-MM-dd'
+                  },
+                  hour: {
+                    valueFormat: 'yyyy-MM-dd HH:mm:ss'
+                  },
+                  minute: {
+                    valueFormat: 'yyyy-MM-dd HH:mm:ss'
+                  },
+                  second: {
+                    valueFormat: 'yyyy-MM-dd HH:mm:ss'
+                  }
+                },
+                taskViewConfig: {
+                  showNowLine: true,
+                  gridding: {
+                    leftSpacing: 1,
+                    rightSpacing: 1
+                  }
+                },
                 taskSplitConfig: {
                   enabled: true,
                   resize: true,
                   showCollapseTableButton: true,
                   showCollapseTaskButton: true
+                },
+                taskBarSubviewConfig: {
+                  // showOverview: false
                 }
               }
             })
