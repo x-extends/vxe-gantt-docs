@@ -151,4 +151,3 @@ fetch(`${process.env.VUE_APP_RES_URL}/i18n/${i18n.locale}.json?v=${process.env.V
       render: h => h(App)
     }).$mount('#app')
   })
-
