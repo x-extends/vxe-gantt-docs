@@ -13,7 +13,8 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "@types/node"
     ],
     "paths": {
       "@/*": [
