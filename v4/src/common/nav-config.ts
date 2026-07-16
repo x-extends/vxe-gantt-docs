@@ -2,7 +2,7 @@ import XEUtils from 'xe-utils'
 import { NavVO, otherUrl } from './nav'
 import { ganttNavConfig } from './gantt'
 
-XEUtils.eachTree([ganttNavConfig], (item, index, items, path, parent, nodes) => {
+XEUtils.eachTree([ganttNavConfig], (item, index, items, path, parentItem, nodes) => {
   if (nodes.length <= 1) {
     item.isExpand = true
   }
@@ -11,6 +11,7 @@ XEUtils.eachTree([ganttNavConfig], (item, index, items, path, parent, nodes) => 
 export const navConfigList: NavVO[] = [
   {
     i18nKey: 'app.aside.menu.demoTitle',
+    icon:'vxe-icon-click-button',
     isExpand: true,
     children: [
       { i18nKey: 'app.aside.menu.demoProductList', routerLink: { name: 'DemoProductList' } },
@@ -25,6 +26,7 @@ export const navConfigList: NavVO[] = [
   },
   {
     i18nKey: 'app.aside.menu.guide',
+    icon: 'vxe-icon-rich-text',
     isExpand: true,
     children: [
       {
@@ -83,6 +85,7 @@ export const navConfigList: NavVO[] = [
   },
   {
     i18nKey: 'app.aside.menu.tools',
+    icon: 'vxe-icon-tools',
     children: [
       { i18nKey: 'app.aside.menu.clipboard', routerLink: { name: 'ToolClipboard' } },
       { i18nKey: 'app.aside.menu.functions', linkUrl: 'https://util.vxeui.com' }
@@ -91,6 +94,7 @@ export const navConfigList: NavVO[] = [
   ganttNavConfig,
   {
     title: 'API',
+    icon: 'vxe-icon-doc-search',
     isExpand: true,
     children: []
   }
