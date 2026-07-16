@@ -11,7 +11,7 @@ XEUtils.eachTree([ganttNavConfig], (item, index, items, path, parentItem, nodes)
 export const navConfigList: NavVO[] = [
   {
     i18nKey: 'app.aside.menu.demoTitle',
-    icon:'vxe-icon-click-button',
+    icon: 'vxe-icon-click-button',
     isExpand: true,
     children: [
       { i18nKey: 'app.aside.menu.demoProductList', routerLink: { name: 'DemoProductList' } },
