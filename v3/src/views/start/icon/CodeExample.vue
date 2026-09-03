@@ -18,7 +18,8 @@
               GANTT_VIEW_LEFT_OPEN: 'vxe-icon-arrow-left',
               GANTT_VIEW_LEFT_CLOSE: 'vxe-icon-arrow-right',
               GANTT_VIEW_RIGHT_OPEN: 'vxe-icon-arrow-right',
-              GANTT_VIEW_RIGHT_CLOSE: 'vxe-icon-arrow-left'
+              GANTT_VIEW_RIGHT_CLOSE: 'vxe-icon-arrow-left',
+              GANTT_VIEW_TASK_MILESTONE: 'vxe-icon-square-fill rotate45'
             })
           </pre-code>
         </pre>
