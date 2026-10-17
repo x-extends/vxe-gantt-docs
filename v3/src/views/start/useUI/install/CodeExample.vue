@@ -14,7 +14,7 @@
 
       <template #use>
         <vxe-tip status="success" title="完整安装">
-          甘特图依赖 <vxe-link  href="https://vxetable.cn" target="_blank">vxe-table v3.18+</vxe-link> 版本。
+          甘特图依赖 <vxe-link  href="https://vxetable.cn" target="_blank">vxe-table v3.24+</vxe-link> 版本。
         </vxe-tip>
         <pre>
           <pre-code
