@@ -7,9 +7,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --no-module",
     "pack": "npm run build && gulp build_examples && npm run oxfix:examples",
-    "lint:es": "eslint src/**",
+    "lint:es": "eslint src",
     "lint:ox": "oxfmt --check src/**",
-    "esfix": "eslint --fix src/**",
+    "esfix": "eslint --fix src",
     "oxfix": "oxfmt src/** --write",
     "esfix:examples": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx,.vue dist/example/js/**",
     "oxfix:examples": "oxfmt dist/example/js/ --write"
