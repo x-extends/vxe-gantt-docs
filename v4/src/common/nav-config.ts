@@ -80,7 +80,8 @@ export const navConfigList: NavVO[] = [
           { i18nKey: 'app.aside.menu.configTranslate', routerLink: { name: 'StartTranslate' } }
         ]
       },
-      { i18nKey: 'app.aside.menu.globalPermission', routerLink: { name: 'StartPermission' } }
+      { i18nKey: 'app.aside.menu.globalPermission', routerLink: { name: 'StartPermission' } },
+      { i18nKey: 'app.aside.menu.globalScrollbar', routerLink: { name: 'StartScrollbar' } }
     ]
   },
   {
