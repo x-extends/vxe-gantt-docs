@@ -1,24 +1,29 @@
 {
   "name": "vxe-gantt-docs",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "update": "pnpm install --no-frozen-lockfile",
     "update:v3": "cd v3 && npm run update",
     "update:v4": "cd v4 && npm run update",
-    "update:all": "npm run update:v3 && npm run update:v4",
+    "update:all": "npm run update && concurrently --timings \"npm run update:v3\" \"npm run update:v4\"",
+
     "build:v3": "cd v3 && npm run pack",
     "build:v4": "cd v4 && npm run pack",
-    "build:all": "npm run build:v3 && npm run build:v4",
-    "build": "npm run build:all",
-    "pack:v3": "npm run build:v3 && gulp build_v3_docs && gulp build_v3_zip",
-    "pack:v4": "npm run build:v4 && gulp build_v4_docs && gulp build_v4_zip",
-    "pack:all": "npm run build:all && gulp build_all_docs && gulp build_all_zip"
+    "build:all": "concurrently --timings \"npm run build:v3\" \"npm run build:v4\"",
+
+    "pack:v3": "npm run build:v3 && node scripts/build-pack.js v3",
+    "pack:v4": "npm run build:v4 && node scripts/build-pack.js v4",
+    "pack:all": "npm run build:all && node scripts/build-pack.js"
   },
   "devDependencies": {
     "archiver": "~8.0.0",
     "concurrently": "^10.0.6",
     "del": "~6.0.0",
     "xe-utils": "^4.1.4"
+  },
+  "allowScripts": {
+    "es5-ext": true
   }
 }
