@@ -15,7 +15,9 @@
 
     "pack:v3": "npm run build:v3 && node scripts/build-pack.js v3",
     "pack:v4": "npm run build:v4 && node scripts/build-pack.js v4",
-    "pack:all": "npm run build:all && node scripts/build-pack.js"
+    "pack:all": "npm run build:all && node scripts/build-pack.js",
+
+    "clean:pack": "node scripts/clean-pack.js"
   },
   "devDependencies": {
     "archiver": "~8.0.0",
