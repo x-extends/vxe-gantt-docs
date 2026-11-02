@@ -3,7 +3,7 @@
  */
 
 /** 默认打包目标 */
-export const defaultTargets = ['other3', 'other4', 'v3', 'v4']
+export const defaultTargets = ['v3', 'v4']
 
 // 默认首页
 export const defaultTarget = 'v4'
