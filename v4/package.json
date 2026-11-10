@@ -64,6 +64,8 @@
     "vue-tsc": "~3.3.13"
   },
   "allowScripts": {
-    "@parcel/watcher": true
+    "@parcel/watcher": true,
+    "core-js": true,
+    "esbuild": true
   }
 }
